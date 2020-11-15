@@ -204,7 +204,7 @@
                 <div class="column">
                     <div class="column2 bg-light">
                         <h2>Request Callback</h2>
-                        <form action="" class="callback-form">
+                        <form action="process.php" method="POST" class="callback-form">
                             <div class="form-control">
                                 <label for="name"></label>
                                 <input type="text" id="name" name="name" placeholder="Enter Name">
@@ -259,7 +259,7 @@
             }
         }
         //smooth scrolling
-        $('#navbar a, .btn').on('click', function (e) {
+        $('#navbar a').on('click', function (e) {
             if (this.hash !== '') {
                 e.preventDefault();
                 const hash = this.hash;
